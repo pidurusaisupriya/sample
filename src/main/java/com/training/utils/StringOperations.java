@@ -102,7 +102,7 @@ public class StringOperations {
     }
 
     public List<String> getArrayImpl2(String input, char symbol) {
-        List<String> students = new ArrayList<String> ( );
+        List<String> students = new ArrayList<> ( );
         String s = new String ( );
         for (int i = 0; i < input.length ( ); i++) {
             char c = input.charAt ( i );
@@ -165,7 +165,7 @@ public class StringOperations {
 
     public Map<Character, Integer> countCharOccurances(String input) {
         input = input.toUpperCase ( );
-        Map<Character, Integer> characterIntegerMap = new HashMap<> ( );
+        Map<Character, Integer> characterIntegerMap = new HashMap<Character, Integer> ( );
         char[] strArray = input.toCharArray ( );
 
         for (char c : strArray) {
